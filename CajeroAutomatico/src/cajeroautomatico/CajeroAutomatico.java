@@ -3,6 +3,8 @@ package cajeroautomatico;
 
 import models.Cliente;
 import static models.Cliente.clientes;
+import static models.Cliente.ingresarSaldo;
+
 
 /**
  *
@@ -27,6 +29,11 @@ public class CajeroAutomatico {
         clientes.add(new Cliente("Ignacio Lopez", "77777777", 0.0));
         clientes.add(new Cliente("Ignacio Lopez", "77777777", 0.0));
         
+        System.out.println(clientes);
+        
+        ingresarSaldo(1, 100.00);
+        System.out.println(clientes);
+        ingresarSaldo(1, 70.00);
         System.out.println(clientes);
     }
     

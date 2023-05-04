@@ -51,5 +51,9 @@ public class Cliente {
         return "Cliente{" + "nombre=" + nombre + ", numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + '}';
     }
     
-    
+    public static void ingresarSaldo(int recNo, Double importe){
+        Double saldoActual = clientes.get(recNo).getSaldo();
+        
+        clientes.get(recNo).setSaldo(importe+saldoActual);
+    }
 }
