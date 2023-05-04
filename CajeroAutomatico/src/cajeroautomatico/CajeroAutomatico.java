@@ -2,6 +2,7 @@
 package cajeroautomatico;
 
 import models.Cliente;
+import static models.Cliente.clientes;
 
 /**
  *
@@ -11,6 +12,7 @@ public class CajeroAutomatico {
 
     public static void main(String[] args) {
         //Clase explicita
+        /*
        Cliente chabelo = new Cliente();
        chabelo.setNombre("Javier Lopez");
        chabelo.setNumeroCuenta("8888888888");
@@ -21,6 +23,11 @@ public class CajeroAutomatico {
         //Clase implicita
         Cliente tarso = new Cliente("Ignacio Lopez", "7777777", 0.0);
         System.out.println(tarso);
+        */
+        clientes.add(new Cliente("Ignacio Lopez", "77777777", 0.0));
+        clientes.add(new Cliente("Ignacio Lopez", "77777777", 0.0));
+        
+        System.out.println(clientes);
     }
     
 }
